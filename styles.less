@@ -1,0 +1,48 @@
+// vars
+
+@my-bg-color: #ff6969;
+@my-bg-color2: lightblue;
+
+span {
+    background-color: @my-bg-color;
+}
+
+// mixins
+
+.generic-div(@padding: 0px) {
+    padding: @padding;
+}
+
+.my-div-1 {
+    background: @my-bg-color;
+    .generic-div(10px)
+}
+
+.my-div-2 {
+    background: @my-bg-color2;
+    .generic-div
+}
+
+// nesting
+
+ul {
+    background: red;
+    @child-bg: yellow;
+
+    li {
+        background: @child-bg;
+    }
+}
+
+// operations
+
+.mingmong {
+    background: @my-bg-color - 68;
+}
+
+// functions
+
+.mingmong2 {
+    background: fadeout(@my-bg-color, 50%);
+    color: @my-bg-color;
+}

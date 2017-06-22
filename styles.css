@@ -1,0 +1,24 @@
+span {
+  background-color: #ff6969;
+}
+.my-div-1 {
+  background: #ff6969;
+  padding: 10px;
+}
+.my-div-2 {
+  background: lightblue;
+  padding: 0px;
+}
+ul {
+  background: red;
+}
+ul li {
+  background: yellow;
+}
+.mingmong {
+  background: #bb2525;
+}
+.mingmong2 {
+  background: rgba(255, 105, 105, 0.5);
+  color: #ff6969;
+}
